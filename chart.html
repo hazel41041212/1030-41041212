@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS 套件介紹</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <style>
+
+    </style>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAA8FBMVEX////
+                qyjH/3iQAAAD/3AD9+vDpyTL478jpxxT+99npxxv/3Rr/3RDe393/5mnpyST+7Zv+763/++pdXVvv12/s7ez19vXFx8Wurq347cLR0tEwMDD6/
+                f/uzi/z0yyfoJ+8vbz19vD52Cjh4eHw8fA9PTwkJCOam5r28dr/8rr//fT/65G3t7drbGuDhYOUlZQOEA01NjRQUVB6enmoqadhYWD/5Fzmyj//
+                6YHs2YT+7qPnzEz045//4Drw46sXGRdJSkl/f34cHhr06Lnr0mLr1nfq2o/w683z46X/6YX/9s/sz0r/5V/t0ln
+                /53Tv58CfmmM1AAALwklEQVR4nO2dC0PaPBuGqzCtgPYVpCAewKF44jQGOjeneJxzn/r//82XcxMotE1LSyL3e1BKGs3FkzR3nrQaxkILLSTKbtZqteZh0r+GrMrHVaB+v1q15SupdFqFQqvdrHsVLKagKvI
+                /KVl9S1EVZaso3bI6UoXptWBY667vNY+GwyPZ3yEe7YSG1U7xmh410yKrD9+S/B1iUiosrKrAakLUUNnH1ePjjvtPQrBCjAUxqF6vH5bDwELndkuGcVjpNLxgTVN1/iMLqsJgVUrlzt1g0OrgnlI5rrCPulQq1QASu1ZtD5wS5Fw6slda5PBhvzUcDqqwznqbHKu3QQFwNayB7+0KviQe1mtV
+                /HYNVVQGb5dm29qQqrMGH7HuBGMFDzFNVAZB6fC97h41CkVla6RC+zst1MJnFvr16jfYyXrgxS2pudsgV4aBQTohUZxtDyznGnXE/co18voWlWkTnnyJMjjehN8c1YSxZp0rUySxl8IjUgH8f2ekCGBpoDfopxB3+wPJZrAgG/p5ww
+                /4GH5F3QQMR6lvuJH3jYZTgqLY6bBrXJ0caeBaOVjFCbDgB6NKZBkMFh5J7HKDxBFq03eDADgGQUhLkMYLjbzDQ9cRPcmu9UAnLjkF1kVYR5VKpY7GqiGlvm7Y9nxfER1YVDaNqC75pKuUDVWRluBYgNHHpgdosXX8uleqVIpFQ4TVYxXBKUOLfJ138bDqtXaP9Q08VIFvhinUC3GJ5l2vy0oYdccEIBBocO84lZdooEGNw2I
+                /vKMcrON7p+F9g3SOgXEIv1RR2T5XooxPLxX4k4Y05oh8waoQWDE1OIQQCtjJ7C7fp47he7hPoWseHK3sHb5EmdZg19pk0B9it8n1aS9Y9wSWIpPSeoqwQMNGu1k5bDJY6PMutxAGINRD2+UKOc7XUjzGYI
+                /cIuuOvBBgFdChewJXAbsDhSfPBgkjOIz3GSzUKhRwcHJapCXxyARgcVRwUUy87xxGsNrkhQusFIFUpj98vtUmfYJFGI4bPEax4Ru+IDwMMokEsG6/NWk16NAAN5pNLIsYVocrI8JC
+                /OHSDPrIanG0V042sNHrTRQK8LOvMyhtJzqoD0GWpp6i/fGIwIInt2ogIIq4miYJFVS89B0QnwwL2pzSDg3iEj00pyqnHJEJPGjmoDfsOrBs8n6Fvej2CoNWl8ASV7MQCDLzarVwtdRVIgmwGgNqBWzntKNBaz5XUrkJpTOaM5Fx5w69IJOsllCiJhpg4JXQ
+                /L7JHTFEWIOUm91BPdk5NJ/LDnX663Vr+ACZjnZ5WEX+BTXS3XvSqkoj5YgiWR/SIw0XWA1jBFbNeY/7XOZN9rBQaLXafSfum71eGy0h2PUSmyut9783nHWtdgsvZtVLVVxivdxpFXqDTo2reb0DuN+iBa0iTInQn1CD2RGDesNOu92pcp2uXr4bDDrzP32IWcyhL+
+                QtBGt0zXAhdy1gBdACVgBxdmchTxUPi8X5N4ILLbTQnOtkXPmp+kJ1MFG2o90RJd3ccLLM2JV0k+X1aylu/Uq6yfLasmJmZW0l3WR5XcUO6yrpJsvrOXZY10k3WV43scO6SbrJ8nrIxAwr85F0k+W1GjusP0k3WV4nZsywzJOkmyyvfOywDpJusrwOIuuGK+hf8B
+                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"
+                    alt="Bootstrap" width="30" height="24">
+                JS 套件介紹
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="aos.html">AOS 動畫</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="text-to-speech.html">文字轉語音</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="lottie.html">Lottie 動畫</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="chart.html">Chart.js 圖表</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            更多介紹
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="lazy-loading.html">Lazy-loading 懶加載</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="Moment.html">Moment 日期和時間處理函數</a></li>
+                            <li><a class="dropdown-item" href="Three.html">Three.js 3D 可視化</a></li>
+                            <li><a class="dropdown-item" href="anime.html">Anime.js 動畫效果</a></li>
+                            <li><a class="dropdown-item" href="fullCalendar.html">FullCalendar 行程管理</a></li>
+                            <li><a class="dropdown-item" href="swiper.html">Swiper 滑動效果</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <h1 class="mt-4">Chart.js 圖表</h1>
+        <p style="font-size: 22px;"><a href="https://www.chartjs.org/" target="_blank">Chart.js 圖表官方網站</a></p>
+
+        <h4 class="mt-4">關於Chart.js 圖表動畫的小介紹</h4>
+
+        <p class="mb-4">Chart.js 圖表是一種流行的開源 JavaScript 圖表庫，用於在網頁上輕鬆製作互動圖表。它支援多種圖表類型</p>
+
+        <h2>Chart.js 圖表優點</h2>
+        <ul>
+            <li><strong>簡單易用：</strong> 只需引入 Chart.js 的腳本檔案，就能透過一段簡單的 JavaScript 代碼來生成圖表。</li>
+            <li><strong>響應式設計：</strong> 圖表可以自動適應不同裝置的螢幕大小。</li>
+            <li><strong>高度可定制：</strong> 提供豐富的配置選項來調整圖表的外觀和行為，例如顏色、字體、動畫等。</li>
+            <li><strong>互動功能：</strong> 支援滑鼠懸停和點擊事件，讓使用者能夠與圖表進行互動。</li>
+            <li><strong>擴充性：</strong> 可以透過插件來擴充功能，也支援自定義圖表。</li>
+        </ul>
+
+        <h4>以下是簡單的範例</h4>
+
+        <p class="mb-4"> 以下數據分別為氣泡位置 (x, y) 和大小 r </p>
+
+
+        <!-- 放置氣泡圖的 canvas -->
+        <canvas id="myChart" width="100" height="50"></canvas>
+
+        <!-- Chart.js 的初始化程式碼 -->
+        <script>
+            const ctx = document.getElementById('myChart').getContext('2d');
+
+            // 建立氣泡圖
+            const myChart = new Chart(ctx, {
+                type: 'bubble', // 圖表類型：氣泡圖
+                data: {
+                    datasets: [{
+                        label: '數據組 1',
+                        data: [
+                            { x: 10, y: 20, r: 15 }, // 氣泡位置 (x, y) 和大小 r
+                            { x: 15, y: 10, r: 10 },
+                            { x: 20, y: 30, r: 20 },
+                            { x: 25, y: 15, r: 8 },
+                            { x: 30, y: 25, r: 12 }
+                        ],
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        x: {
+                            beginAtZero: true // x 軸從零開始
+                        },
+                        y: {
+                            beginAtZero: true // y 軸從零開始
+                        }
+                    },
+                
+                }
+            });
+        </script>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
